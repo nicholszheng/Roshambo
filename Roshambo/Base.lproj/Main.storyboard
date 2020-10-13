@@ -83,15 +83,14 @@
                                 <rect key="frame" x="149" y="264" width="116" height="65"/>
                                 <state key="normal" title="Rock" image="rock"/>
                                 <connections>
-                                    <action selector="rockButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EjB-W0-e7g"/>
+                                    <action selector="playRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8WH-Od-0iU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJK-1E-33a" userLabel="Paper">
                                 <rect key="frame" x="146" y="429" width="122" height="65"/>
                                 <state key="normal" title="Paper" image="paper"/>
                                 <connections>
-                                    <action selector="Paper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HnH-iI-kQe"/>
-                                    <action selector="paperButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Qh-Td-ewI"/>
+                                    <action selector="playPaper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ntl-Rw-hnY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfN-Ol-Nb9" userLabel="Scissors">
