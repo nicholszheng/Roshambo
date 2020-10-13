@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +10,11 @@
         <!--Results View Controller-->
         <scene sceneID="wTg-Yc-VJ0">
             <objects>
-                <viewController id="U8G-85-mhX" customClass="ResultsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultsViewController" id="U8G-85-mhX" customClass="ResultsViewController" customModule="Roshambo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wef-a5-gSc"/>
+                        <viewControllerLayoutGuide type="bottom" id="lzt-dQ-bCK"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MUU-Vg-LTf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,17 +36,16 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="vve-T7-Z6V"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="fYE-9N-4kG" firstAttribute="centerY" secondItem="MUU-Vg-LTf" secondAttribute="centerY" id="E0l-BN-1w7"/>
                             <constraint firstItem="fYE-9N-4kG" firstAttribute="centerX" secondItem="MUU-Vg-LTf" secondAttribute="centerX" id="HzX-2y-Vz0"/>
-                            <constraint firstItem="vve-T7-Z6V" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zAt-z6-q6z" secondAttribute="trailing" id="LJe-fP-LWt"/>
-                            <constraint firstItem="vve-T7-Z6V" firstAttribute="bottom" secondItem="zAt-z6-q6z" secondAttribute="bottom" constant="220" id="XcZ-rB-ndN"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zAt-z6-q6z" secondAttribute="trailing" id="LJe-fP-LWt"/>
+                            <constraint firstItem="lzt-dQ-bCK" firstAttribute="top" secondItem="zAt-z6-q6z" secondAttribute="bottom" constant="220" id="XcZ-rB-ndN"/>
                             <constraint firstItem="Nz1-P1-dss" firstAttribute="centerX" secondItem="MUU-Vg-LTf" secondAttribute="centerX" id="d5y-ks-8XD"/>
-                            <constraint firstItem="zAt-z6-q6z" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vve-T7-Z6V" secondAttribute="leading" id="dOR-a7-dpO"/>
-                            <constraint firstItem="vve-T7-Z6V" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Nz1-P1-dss" secondAttribute="trailing" id="ft0-8g-Hkc"/>
-                            <constraint firstItem="Nz1-P1-dss" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vve-T7-Z6V" secondAttribute="leading" id="lFF-Xk-bL5"/>
+                            <constraint firstItem="zAt-z6-q6z" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MUU-Vg-LTf" secondAttribute="leading" id="dOR-a7-dpO"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Nz1-P1-dss" secondAttribute="trailing" id="ft0-8g-Hkc"/>
+                            <constraint firstItem="Nz1-P1-dss" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MUU-Vg-LTf" secondAttribute="leading" id="lFF-Xk-bL5"/>
                             <constraint firstItem="Nz1-P1-dss" firstAttribute="top" secondItem="fYE-9N-4kG" secondAttribute="bottom" constant="8" symbolic="YES" id="mVt-6N-pTA"/>
                             <constraint firstItem="zAt-z6-q6z" firstAttribute="top" secondItem="Nz1-P1-dss" secondAttribute="bottom" constant="8" symbolic="YES" id="tDQ-xH-Pha"/>
                             <constraint firstItem="zAt-z6-q6z" firstAttribute="centerX" secondItem="MUU-Vg-LTf" secondAttribute="centerX" id="wIq-Bl-zbe"/>
@@ -62,7 +64,11 @@
         <!--Choice View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ChoiceViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ChoiceViewController" customModule="Roshambo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="trq-9I-ZIQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="9ok-Hc-KFz"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,35 +79,35 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JP4-3B-vdP" userLabel="rockButton">
-                                <rect key="frame" x="169.5" y="264" width="75" height="65"/>
-                                <state key="normal" image="rock"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JP4-3B-vdP" userLabel="Rock">
+                                <rect key="frame" x="149" y="264" width="116" height="65"/>
+                                <state key="normal" title="Rock" image="rock"/>
                                 <connections>
                                     <action selector="rockButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EjB-W0-e7g"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJK-1E-33a" userLabel="paperButton">
-                                <rect key="frame" x="169.5" y="429" width="75" height="65"/>
-                                <state key="normal" image="paper"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJK-1E-33a" userLabel="Paper">
+                                <rect key="frame" x="146" y="429" width="122" height="65"/>
+                                <state key="normal" title="Paper" image="paper"/>
                                 <connections>
+                                    <action selector="Paper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HnH-iI-kQe"/>
                                     <action selector="paperButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Qh-Td-ewI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfN-Ol-Nb9" userLabel="scissorButton">
-                                <rect key="frame" x="169.5" y="594" width="75" height="65"/>
-                                <state key="normal" image="scissors"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfN-Ol-Nb9" userLabel="Scissors">
+                                <rect key="frame" x="135.5" y="594" width="143" height="65"/>
+                                <state key="normal" title="Scissors" image="scissors"/>
                                 <connections>
                                     <segue destination="U8G-85-mhX" kind="presentation" identifier="play" id="ZJW-l6-Vpf"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="JP4-3B-vdP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="264" id="04D-d0-aRO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zfN-Ol-Nb9" secondAttribute="bottom" constant="203" id="1hq-Mc-UHK"/>
+                            <constraint firstItem="9ok-Hc-KFz" firstAttribute="top" secondItem="zfN-Ol-Nb9" secondAttribute="bottom" constant="203" id="1hq-Mc-UHK"/>
                             <constraint firstItem="QJK-1E-33a" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="429" id="1k7-ZT-ZhB"/>
-                            <constraint firstItem="9Dd-C2-wbU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="2RO-ra-w4W"/>
+                            <constraint firstItem="9Dd-C2-wbU" firstAttribute="top" secondItem="trq-9I-ZIQ" secondAttribute="bottom" constant="80" id="2RO-ra-w4W"/>
                             <constraint firstItem="9Dd-C2-wbU" firstAttribute="centerX" secondItem="QJK-1E-33a" secondAttribute="centerX" id="IAt-Ua-JZW"/>
                             <constraint firstItem="9Dd-C2-wbU" firstAttribute="centerX" secondItem="JP4-3B-vdP" secondAttribute="centerX" id="hrq-HJ-W0n"/>
                             <constraint firstItem="9Dd-C2-wbU" firstAttribute="centerX" secondItem="zfN-Ol-Nb9" secondAttribute="centerX" id="uoE-BX-F8j"/>

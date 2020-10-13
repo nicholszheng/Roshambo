@@ -13,7 +13,7 @@ class ChoiceViewController: UIViewController {
 
     // MARK: Programmatic Approach
     
-    @IBAction func rockButton(_ sender: UIButton) {
+    @IBAction func playRock(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "ResultsViewController") as! ResultsViewController
         vc.userChoice = getUserShape(sender)
         present(vc, animated: true, completion: nil)
@@ -21,7 +21,7 @@ class ChoiceViewController: UIViewController {
     
     // Mark: Segue with Code Approach
     
-    @IBAction func paperButton(_ sender: UIButton) {
+        @IBAction func playPaper(_ sender: UIButton) {
         performSegue(withIdentifier: "play", sender: sender)
     }
     
